@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Terminal Intro -->
+  <div id="terminal-screen">
+    <div id="terminal-window">
+      <div id="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">einstein-resume v1.0</span>
+      </div>
+      <div id="terminal-body">
+        <div id="terminal-output"></div>
+        <div id="terminal-input-line">
+          <span class="prompt">visitor@resume:~$&nbsp;</span>
+          <input type="text" id="terminal-input" autocomplete="off" autofocus spellcheck="false">
+          <span class="cursor-blink">_</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="hidden">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Section indicator -->
+    <div id="section-indicator"></div>
+
+    <!-- Back to Terminal button -->
+    <button id="back-to-terminal" class="hidden">Back to Terminal</button>
+
+    <!-- Mobile Controls -->
+    <div id="mobile-controls">
+      <button id="btn-left" class="ctrl-btn">&larr;</button>
+      <button id="btn-right" class="ctrl-btn">&rarr;</button>
+    </div>
+
+    <!-- Controls hint -->
+    <div id="controls-hint">
+      Arrow Keys / WASD to move &nbsp;|&nbsp; Scroll to navigate
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
