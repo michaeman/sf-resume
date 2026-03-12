@@ -9,10 +9,12 @@ An interactive side-scrolling resume experience inspired by classic 90s platform
 ## Features
 
 - **Terminal intro** — Boot sequence with a retro command prompt. Type `start` to launch.
+- **Hot air balloon landing** — Einstein and the Agentforce robot descend into the world via a Dreamforce-style hot air balloon. Einstein stands inside the basket with his face visible above the rim. After landing the balloon floats away.
 - **Side-scrolling gallery** — Walk through resume sections as large, readable content panels.
-- **Salesforce Einstein mascot** — Chibi-style Einstein character you control, with walking animation and atom orbital effect.
+- **Salesforce Einstein mascot** — Chibi-style Einstein character with a full animation set: walking arm-swing, jump, sideways jump, slide tackle, bow, and landing poses.
 - **Agentforce robot companion** — The Agentforce robot mascot follows you through the world, hovering with a gentle bob animation.
 - **5 resume sections** — Introduction, Experience, Skills, Education & Certifications, Contact.
+- **Finish line** — A floating "FINISH LINE" banner with a flag that raises as you approach. Walking through triggers confetti and a thank-you modal.
 - **Multiple navigation methods** — Arrow keys, WASD, mouse scroll wheel, or mobile touch controls.
 - **Back to terminal** — A button fades in at the end to return to the command prompt.
 
@@ -26,6 +28,10 @@ Just open `index.html` in any modern browser — no build step required.
 |-------|--------|
 | `Arrow Right` / `D` | Move right |
 | `Arrow Left` / `A` | Move left |
+| `W` | Jump |
+| `W` + `A` / `D` | Sideways jump |
+| `S` | Bow |
+| `S` + `A` / `D` | Slide tackle |
 | `Scroll wheel` | Pan the world |
 | Mobile buttons | Left / Right on screen |
 
